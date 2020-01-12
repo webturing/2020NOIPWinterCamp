@@ -2,13 +2,18 @@
 #include<algorithm>
 
 using namespace std;
-
+//插入算法：用滑窗理解比较方便
 int main() {
     int n;
     cin >> n;
     int a[n];
     for (int i = 0; i < n; i++)cin >> a[i];
-    sort(a, a + n);
+    
+
+
+
+
+    
     for (int i = 0; i < n; i++) {
         cout << a[i] << " ";
     }
