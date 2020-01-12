@@ -13,4 +13,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
+  <component name="WindowStateProjectService">
+    <state x="435" y="141" key="CommitChangelistDialog2" timestamp="1578819583682">
+      <screen x="38" y="23" width="1642" height="1027" />
+    </state>
+    <state x="435" y="141" key="CommitChangelistDialog2/38.23.1642.1027@38.23.1642.1027" timestamp="1578819583682" />
+    <state x="459" y="278" key="Vcs.Push.Dialog.v2" timestamp="1578819588277">
+      <screen x="38" y="23" width="1642" height="1027" />
+    </state>
+    <state x="459" y="278" key="Vcs.Push.Dialog.v2/38.23.1642.1027@38.23.1642.1027" timestamp="1578819588277" />
+  </component>
 </project>
