@@ -1,27 +1,26 @@
 #include<iostream>
 #include<algorithm>
 #include<cstdio>
+
 using namespace std;
+
 //理解滑窗算法
 int main() {
-    freopen("input.txt","r",stdin);
+    freopen("input.txt", "r", stdin);
     int n;
     cin >> n;
     int a[n];
     for (int i = 0; i < n; i++)cin >> a[i];
 
-    for(int i=0;i<n;i++){
+    for (int i = 0; i < n; i++) {
         //j 0 n-i-2
-        for(int j=0;j<=n-i-2;j++){
+        for (int j = 0; j <= n - i - 2; j++) {
             ///cmp a[j] a[j+1]
-            if(a[j]>a[j+1])swap(a[j],a[j+1]);
+            if (a[j] > a[j + 1])swap(a[j], a[j + 1]);
         }
 
 
     }
-
-
-
 
 
     for (int i = 0; i < n; i++) {
