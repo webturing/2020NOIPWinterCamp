@@ -6,20 +6,19 @@ using namespace std;
 int main()
 {
 
-    int a[10] = {5, 1, 6, 4, 7, 3, 2, 8, 0, 9};
+    int a[10] = {6, 1, 2, 7, 9, 3, 4, 5, 10,8};
     int n = 10, k = 0, piv = a[k];
     int i = k + 1, j = n - 1;
 
-    i++;
     while (i < j)
     {
-        while (a[i] <= piv)
-            i++;
-        while (a[j] > piv)
+        while (a[j] >=piv&&i<j)
             j--;
+        while (a[i] <= piv&&i<j)
+            i++;
+        if(i>=j)break;
         swap(a[i], a[j]);
-        i++;
-        j--;
+
     }
     swap(a[k], a[i]);
     for (int i = 0; i < n; i++)

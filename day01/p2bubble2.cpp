@@ -12,15 +12,11 @@ int main() {
 
     for(int i=0;i<n;i++){
         //j 0 n-i-2
-        for(int j=0;j<=n-i-2;j++){
-            ///cmp a[j] a[j+1]
+       for(int j=n-2;j>=i;j--){
             if(a[j]>a[j+1])swap(a[j],a[j+1]);
-        }
-
+       }
 
     }
-
-
 
 
 

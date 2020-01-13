@@ -3,11 +3,21 @@
 
 using namespace std;
 //重点理解有序列表的合并算法
+void merge_sort(int *a,int left,int right){
+    if(left>=right)
+        return ;
+    int mid=(left+right)/2;
+    merge_sort(a,left,mid);
+    merge_sort(a,mid+1,right);
+    //Merge();
+}
 int main() {
-    int a[5]={1,2,5,7,9};
-    int b[5]={1,3,6,8,10};
+    int a[10]={1,2,5,7,9,1,3,6,8,10};
+
     int c[10];
+
     int la=5,lb=5;
+    int *b=a+la;
 
     int j=0,i=0,k=0;
     while(i<la&&j<lb){
@@ -19,7 +29,7 @@ int main() {
     }
     while(i<la)
         c[k++]=a[i++];
-    
+
     while(j<lb)
         c[k++]=b[j++];
 

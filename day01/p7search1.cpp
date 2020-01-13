@@ -3,18 +3,16 @@
 
 using namespace std;
 //线性查找
-int main() {
-    int n;
-    cin >> n;
-    int a[n];
-    for (int i = 0; i < n; i++)cin >> a[i];
-    
+int main()
+{
+    int a[10]= {1,3,4,5,3,4,1,1.1,2,2};
+    int n=10;
+    int k=13;
+    cout<<find(a,a+n,k)-a<<endl;
+    cout<<count(a,a+n,1)<<endl;
 
-
-
-
-    
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < n; i++)
+    {
         cout << a[i] << " ";
     }
     cout << endl;
