@@ -5,7 +5,7 @@ using namespace std;
 
 void quick_sort(int *a, int left, int right) {
     if (left >= right)return;
-    int mid = (right + left) / 2;
+
     int piv = a[left];
     int i = left, j = right;
     while (i < j) {
@@ -14,8 +14,8 @@ void quick_sort(int *a, int left, int right) {
         swap(a[i], a[j]);
     }
     swap(a[left], a[i]);
-    quick_sort(a, left, mid);
-    quick_sort(a, mid + 1, right);
+    quick_sort(a, left, i-1);
+    quick_sort(a, i+ 1, right);
 
 }
 
