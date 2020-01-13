@@ -1,16 +1,18 @@
 #include<iostream>
 #include<algorithm>
 #include<cstdio>
+
 using namespace std;
 
 int main() {
-   int a[10000];
-   int j=0;
-   int t;
-   while(cin>>t){
-        a[j++]=t;
-   }
-   sort(a,a+j);
+    int a[10000];
+    int j = 0;
+    int t;
+    while (cin >> t) {
+        a[j++] = t;
+    }
+    sort(a, a + j);
+    return 0;
 }
 /**
  Input:

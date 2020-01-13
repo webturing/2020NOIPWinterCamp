@@ -2,20 +2,23 @@
 #include<algorithm>
 #include<vector>
 #include<cstdio>
+
 using namespace std;
-const int maxn=1000000+50;
+const int maxn = 1000000 + 50;
 int a[maxn];
-bool Cmp(int x,int y){
-    return x%5>y%5;
+
+bool Cmp(int x, int y) {
+    return x % 5 > y % 5;
 }
+
 int main() {
-    freopen("input.txt","r",stdin);
+    freopen("input.txt", "r", stdin);
     int n;
     cin >> n;
 
     for (int i = 0; i < n; i++)cin >> a[i];
 
-    sort(a, a + n,Cmp);
+    sort(a, a + n, Cmp);
     //reverse(a,a+n);
 
     for (int i = 0; i < n; i++) {
