@@ -18,6 +18,6 @@ int main() {
     while (top >= 0) {
         cout << data[top--] << endl;
     }
-
+    return 0;
 
 }

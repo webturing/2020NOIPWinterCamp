@@ -5,8 +5,8 @@ using namespace std;
 int data[10000], head = 0, tail = -1;//队列的定义和初始化，data[head:tail]这一段是队列的有效元素
 
 int main() {
-    cout << "queue empty?" << (head > tail) << endl;//stack empty空栈判断
-    cout << "queue size=" << (tail - head + 1) << endl;//stack size栈的容量
+    cout << "queue empty?" << (head > tail) << endl;//queue empty空栈判断
+    cout << "queue size=" << (tail - head + 1) << endl;//queue size栈的容量
     cout << "queue head=" << data[head] << endl;//queue front队首元素
     cout << "queue tail=" << data[tail] << endl;//queue队尾元素
     data[++tail] = 1;//元素入队

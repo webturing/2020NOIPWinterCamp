@@ -18,7 +18,7 @@ int main() {
     while (head <= tail) {
         cout << data[head++] << endl;
     }
-
+    return 0;
 
 }
 
