@@ -4,14 +4,17 @@ const int n=5;
 //#define n 5
 int a[n]={1,2,3,4,5};
 int book[n]={0};
+int target=10;
 void print(){
     int s=0;
     for(int i=0;i<n;i++){
+         //   cout<<book[i]<<" ";
         if(book[i]==1){
             s+=a[i];
         }
     }
-    if(s!=10)return ;
+    //cout<<endl;
+    if(s!=target)return ;
     for(int i=0;i<n;i++){
         if(book[i]==1){
             cout<<a[i]<<" ";
